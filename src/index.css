@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-size: 11px;
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+.header-container {
+  @apply flex items-center justify-start p-1 fixed w-[100vw] h-[9rem] max-sm:h-[7rem]  bg-slate-600 text-white z-20;
+}
+
+.header-container h4 {
+  font-family: "Anton", sans-serif;
+  @apply relative left-[1rem] text-[3.7rem] max-sm:text-[2.7rem] max-sm:left-[0.5rem];
+}
+
+main {
+  @apply w-[100vw] z-10 absolute top-[9rem] max-sm:top-[7rem];
+}
+.container {
+  @apply max-w-[100%] fixed z-10 bg-white h-[22rem] max-sm:h-[26rem];
+}
+.color-form {
+  @apply p-3 w-[100vw]  mx-auto  flex flex-nowrap justify-between max-sm:flex-wrap gap-3;
+}
+
+.color-picker {
+  @apply w-[22rem] text-[2rem]  max-sm:w-[100%] p-1  flex justify-between max-sm:gap-8 max-sm:justify-start;
+}
+
+.color-picker input {
+  @apply w-[12rem]  outline-none first:h-[100%] first:w-[6rem] max-sm:first:w-[5rem] first:cursor-pointer last:bg-slate-200 last:rounded-lg last:p-2 last:text-center;
+}
+
+.increment-input {
+  @apply w-[32rem] max-sm:w-[100%] text-[2rem]  p-1  flex justify-end gap-8 items-center max-sm:justify-start;
+}
+
+.increment-input label {
+  @apply text-[2.5rem] uppercase;
+}
+
+.increment-input input {
+  @apply w-[7rem] h-[3rem] text-center outline-none bg-slate-300 p-1 rounded-lg;
+}
+
+.generate-btn {
+  @apply bg-slate-600 rounded-md text-[1.5rem] w-[8rem] p-1 text-white hover:bg-slate-500;
+}
+.colors {
+  @apply w-[100vw] p-2  relative top-[22rem] max-sm:top-[26rem] grid gap-2 grid-cols-5 max-lg:grid-cols-3 max-sm:grid-cols-2;
+}
+
+.color {
+  @apply p-4 h-[15rem] rounded-xl cursor-pointer;
+}
+
+.hex-container {
+  @apply w-[12rem] h-[7rem] bg-slate-300 rounded-xl p-2;
+}
+
+.hex-value {
+  @apply text-[1.8rem];
+}
+.percent-value {
+  @apply text-[1.6rem];
+}
+
+.about-overlay {
+  @apply fixed min-w-[100vw] min-h-[100vh] z-30 p-8 text-center;
+}
+
+.about-container {
+  @apply bg-white  rounded-xl leading-[3rem] p-4 w-[50rem]  mt-[40vh] mx-auto;
+}
+
+.about-container p {
+  @apply text-[2rem];
+}
+
+.about-button {
+  @apply bg-red-500 text-[1.5rem] w-[6rem] p-1 rounded-xl h-[3.7rem] text-center mt-4;
+}
+.close-about {
+  @apply hidden;
+}
