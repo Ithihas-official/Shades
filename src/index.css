@@ -11,12 +11,16 @@
 }
 
 .header-container {
-  @apply flex items-center justify-start p-1 fixed w-[100vw] h-[9rem] max-sm:h-[7rem]  bg-slate-600 text-white z-20;
+  @apply flex items-center justify-between p-3 fixed w-[100vw] h-[9rem] max-sm:h-[7rem]  bg-slate-600 text-white z-20;
 }
 
 .header-container h4 {
   font-family: "Anton", sans-serif;
-  @apply relative left-[1rem] text-[3.7rem] max-sm:text-[2.7rem] max-sm:left-[0.5rem];
+  @apply text-[3.7rem] max-sm:text-[2.7rem];
+}
+
+.header-container svg {
+  @apply text-[3rem];
 }
 
 main {

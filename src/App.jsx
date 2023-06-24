@@ -3,6 +3,7 @@ import ColorList from "./ColorList";
 import Form from "./Form";
 import Values from "values.js";
 import { toast, ToastContainer } from "react-toastify";
+import { FaGithub } from "react-icons/fa";
 
 const App = () => {
   const [colors, setColors] = useState(new Values("#000000").all(10));
@@ -39,6 +40,15 @@ const App = () => {
 
       <header className="header-container">
         <h4>shades</h4>
+        <div>
+          <a
+            href="https://github.com/Ithihas-official/Shades.git"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <FaGithub />
+          </a>
+        </div>
       </header>
       <main>
         <Form addColor={addColor} />
